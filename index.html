@@ -54,7 +54,9 @@ section{padding:64px 0}
 section.alt{background:#141a19}
 h2{font-size:1.8rem;margin:0 0 8px}
 .lead{color:var(--mute);margin:0 0 36px;max-width:38em}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.grid{grid-template-columns:1fr}}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
 .card:before{content:"";display:block;width:34px;height:4px;border-radius:2px;background:linear-gradient(90deg,#2a8f7f,#2f5f9a);margin-bottom:14px}
 .card h3{margin:0 0 8px;font-size:1.1rem}
@@ -115,12 +117,12 @@ footer .badge img{height:26px}
 <h2>What we do</h2>
 <p class="lead">We design, install and support sensing systems that keep an eye on things so you do not have to.</p>
 <div class="grid">
+<div class="card"><h3>IoT</h3><p>Connected sensors and dashboards, so readings and alarms reach your phone or computer from anywhere.</p></div>
 <div class="card"><h3>Temperature</h3><p>Live temperature monitoring for commercial cool rooms and plant, with alerts when something drifts.</p></div>
 <div class="card"><h3>Air quality</h3><p>Live air quality monitoring for commercial and industrial sites.</p></div>
+<div class="card"><h3>PLC and control</h3><p>Programmable controller systems that read your sensors and run your equipment reliably.</p></div>
 <div class="card"><h3>Live weights and measures</h3><p>Load cell weighing and measurement for trucks, tanks, hoppers and process equipment, in real working conditions.</p></div>
 <div class="card"><h3>Workplace Exposure Limits (WEL)</h3><p>Air monitoring that helps you track exposure against Workplace Exposure Limits, so you can see when levels are approaching a limit.</p></div>
-<div class="card"><h3>IoT</h3><p>Connected sensors and dashboards, so readings and alarms reach your phone or computer from anywhere.</p></div>
-<div class="card"><h3>PLC and control</h3><p>Programmable controller systems that read your sensors and run your equipment reliably.</p></div>
 </div>
 </div></section>
 
